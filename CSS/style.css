@@ -1,23 +1,92 @@
+/* code for header*/
+
 .inline-block{
 display: inline-block;
 vertical-align: top;
+width: 100%;
 }
-.logo{
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #575E75;
+    color: #fff;
+  }
+  /* Style for the logo */
+  .logo img {
+    width: 100px; /* Set your desired logo size */
+  }
+  /* Style for the navigation */
+  .navigation ul {
+    list-style: none;
+    display: flex;
+  }
+  .navigation li {
+    margin-left: 20px;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+/* here is the code for the cards*/
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+  }
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  .card-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .card-description {
+    font-size: 14px;
+  }
+  /* Media Query for Desktop */
+  @media (min-width: 768px) {
+    .card {
+      flex-direction: row;
+    }
+    .card-image {
+      flex: 1;
+    }
+    .card-content {
+      flex: 2;
+      padding: 20px;
+      background-color: #fff;
+    }
+  }
+
+
+
+
+.content{
+max-width: 200px;
+margin: 0;
 }
-.ul{
-    width: 50%;
-    margin-left: auto;
+
+.flexContainer {
+ display:flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-around;
+ 
+
+
 }
-.heroImg{
-height: 600px;
-padding: 25px;}
-{.content
-width: 500px;
-margin: 0 auto;
-}
+
 .footer{
 background-color: #373738;
 }
